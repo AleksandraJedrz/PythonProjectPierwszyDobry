@@ -1,4 +1,59 @@
-a = 153
+import sys
+
+a = 153.36361
 b = 546
 c = a + b
 print(c)
+print(f'a={a}')
+print(f'b={b}')
+print(f'c={c}')
+type_c = type(c)
+print(f'type_c: {type(c)} c={c}')
+
+d = 3856734584367593578634958734698736454835643957836498756934874639876
+e = 4579587359879879378978398594387985678576587498735873498573945784935
+
+f = d+e
+print(f'f={f}')
+print(f'type_f={type(f)}')
+print('f={}'.format(f))
+s_d = str(d)
+num_digits_d = len(s_d)
+print(f'num_digits_d={num_digits_d}')
+
+f_d = 3856734584367593578634958734698736454835643957836498756934874639876.0
+f_e = 4579587359879879378978398594387985678576587498735873498573945784935.0
+print(f'type(f_d)={type(f_d)}')
+print(f'f_d={f_d}')
+print(f'f_e={f_e}')
+f_f = f_d+f_e
+print(f'f_f={f_f}')
+
+g = 1.52e-2
+print(f'g={g}')
+
+max_f = 1.794e308
+print(f'max_f={max_f}')
+
+print(sys.float_info)
+b_b = 0b1011
+print(f'b_b={b_b}')
+
+h_c = 0x1f
+print(f'h_c={h_c}')
+
+a = 1.9835
+b = round(a, 2)
+print(f'a={a}')
+print(f'b={b}')
+
+f = 10
+g = 4
+r = f % g
+print(f'r={r}')
+
+h = 9
+i = int('9')
+j = h + i
+
+print(f'j={j}')
